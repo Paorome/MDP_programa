@@ -1,0 +1,225 @@
+/* Estilo para el cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(3, 2, 2);
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+/* Estilo para el encabezado del menú de navegación */
+.header {
+  background-color: black; /* Color de fondo del encabezado */
+  display: flex;
+  /* padding: 10px 0;  Espaciado interno superior e inferior */
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.titulo {
+  color: rgb(131, 109, 167);
+  font-size: 30px;
+}
+.header .logo {
+  cursor: pointer;
+}
+
+.header .logo img {
+  height: 100px;
+  width: auto;
+  transition: 0.3s;
+}
+
+.header .logo img:hover {
+  transform: scale(1.2);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: rgb(131, 109, 167);
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+  color: rgb(60, 236, 134);
+}
+
+.header .btn button {
+  font-weight: 800;
+  color: black;
+  padding: 9px 25px;
+  background-color: rgb(93, 56, 104);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover {
+  background-color: rgb(112, 86, 145);
+  color: rgb(60, 236, 134);
+  transform: scale(1.1);
+}
+
+/* Estilo para el carrusel de fotos*/
+.carruselCss {
+  width: 90%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.carousel-item {
+  width: 100% !important;
+  height: 80vh !important;
+  /*background: no-repeat center center scroll !important; 
+    -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  */
+}
+
+.imag1 {
+  width: 100%;
+  height: 80vh !important;
+  object-fit: unset;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+}
+/* Estilo para la sección de Galería de Imágenes */
+/*GENERALES*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+
+/*GALERIA FOTOS*/
+
+/** {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}*/
+
+h1 {
+  text-align: center;
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  color: rgb(87, 19, 83);
+}
+h1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: black;
+  top: 50%;
+  z-index: -1;
+}
+h1 span {
+  background-color: rgb(19, 17, 14);
+  padding: 0 15px;
+}
+.img-galeria {
+  width: 80%;
+  margin: 50px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+.img-galeria img {
+  width: 100%;
+  cursor: pointer;
+  transition: 1s;
+}
+.img-galeria img:hover {
+  transform: scale(1.2);
+}
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, a0.9);
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.full-img img {
+  width: 90%;
+  max-width: 500px;
+}
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    text-decoration: underline;
+  }
+  h1::before {
+    display: none;
+  }
+  h1 span {
+    padding: 0;
+  }
+}
+/* Estilo para la sección de Gestión de Turnos */
+section:nth-child(3) {
+  background-color: black;
+  color: blanco;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo para el botón de solicitud de turno */
+section button {
+  background-color: rgb(102, 22, 102);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para los íconos de redes sociales */
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
