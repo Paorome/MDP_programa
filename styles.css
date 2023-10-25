@@ -193,11 +193,41 @@ h1 span {
   }
 }
 /* Estilo para la sección de Gestión de Turnos */
-section:nth-child(3) {
-  background-color: black;
-  color: blanco;
-  padding: 20px;
-  text-align: center;
+#Turnos {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#solicitudTurnoForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.labelInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.titleInput {
+  padding: 0%;
+  margin-bottom: 0;
+}
+
+.turnoInput {
+  width: 100%;
+  height: 2.3rem;
+  margin-bottom: 1rem;
 }
 
 /* Estilo para el botón de solicitud de turno */
@@ -207,11 +237,27 @@ section button {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  margin-top: 2rem;
+}
+
+/* Estilo para el formulario de turnos en dispositivos que no son de escritorio */
+@media screen and (max-width: 767px) {
+  #solicitudTurnoForm {
+    width: 100%;
+  }
+
+  .labelInput {
+    width: 100%;
+  }
+
+  .turnoInput {
+    width: 100%;
+  }
 }
 
 /* Estilo para el pie de página */
 footer {
-  background-color:rgb(102, 22, 102);
+  background-color: rgb(102, 22, 102);
   color: white;
   text-align: center;
   padding: 10px;
