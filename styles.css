@@ -63,7 +63,7 @@ body {
 
 .header .btn button {
   font-weight: 800;
-  color: black;
+  color: #fff;
   padding: 9px 25px;
   background-color: rgb(93, 56, 104);
   border: none;
@@ -126,7 +126,7 @@ h1 {
   position: relative;
   width: 80%;
   margin: 50px auto;
-  color: rgb(87, 19, 83);
+  color: #fff;
 }
 h1::before {
   content: "";
