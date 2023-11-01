@@ -61,7 +61,7 @@ body {
   color: rgb(60, 236, 134);
 }
 
-.header .btn button {
+.header .btn {
   font-weight: 800;
   color: #fff;
   padding: 9px 25px;
@@ -232,7 +232,7 @@ h1 span {
 }
 
 /* Estilo para el botón de solicitud de turno */
-section button {
+section .btn {
   background-color: rgb(102, 22, 102);
   color: white;
   padding: 10px 20px;
