@@ -232,7 +232,7 @@ h1 span {
 }
 
 /* Estilo para el botón de solicitud de turno */
-section .btn, #Turnos button {
+section .btn, #solicitarTurnoButton {
   background-color: rgb(102, 22, 102);
   color: white;
   padding: 10px 20px;
