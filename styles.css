@@ -150,6 +150,7 @@ h1 span {
   gap: 30px;
 }
 .img-galeria img {
+  height: auto;
   width: 100%;
   cursor: pointer;
   transition: 1s;
